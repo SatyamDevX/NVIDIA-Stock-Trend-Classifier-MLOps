@@ -6,3 +6,11 @@ stages:
       - data/Nvidia_stock.csv
     outs:
       - data/Nvidia_stock_processed.csv
+
+  train:
+      cmd: python3 src/train.py
+      deps:
+        - src/train.py
+        - data/Nvidia_stock_processed.csv
+      outs:
+        - models/model.pkl

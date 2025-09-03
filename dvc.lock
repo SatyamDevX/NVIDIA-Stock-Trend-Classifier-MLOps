@@ -10,12 +10,31 @@ stages:
       isexec: true
     - path: src/data_prep.py
       hash: md5
-      md5: e304ba08f11ee6cf0ff2c69da5f66e07
-      size: 471
+      md5: 9d0939808c6cf0feba6c4f53310834a3
+      size: 858
       isexec: true
     outs:
     - path: data/Nvidia_stock_processed.csv
       hash: md5
-      md5: af74319e57b55fd862c50c65c6308020
-      size: 640585
+      md5: fc093f7bce45930872ea07a0d0ad322f
+      size: 580431
+      isexec: true
+  train:
+    cmd: python3 src/train.py
+    deps:
+    - path: data/Nvidia_stock_processed.csv
+      hash: md5
+      md5: fc093f7bce45930872ea07a0d0ad322f
+      size: 580431
+      isexec: true
+    - path: src/train.py
+      hash: md5
+      md5: f818d1c35cfdd683c14f4a55b72a0e67
+      size: 1160
+      isexec: true
+    outs:
+    - path: models/model.pkl
+      hash: md5
+      md5: 72571ef9c2cad066940f2b8afbd19c7b
+      size: 19933068
       isexec: true
