@@ -1,0 +1,6 @@
+outs:
+- md5: 636398e992b9efafffbc584fb07ae8e7
+  size: 651466
+  isexec: true
+  hash: md5
+  path: Nvidia_stock.csv

@@ -1,0 +1,8 @@
+stages:
+  preprocess:
+    cmd: python3 src/data_prep.py
+    deps:
+      - src/data_prep.py
+      - data/Nvidia_stock.csv
+    outs:
+      - data/Nvidia_stock_processed.csv

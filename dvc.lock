@@ -1,0 +1,21 @@
+schema: '2.0'
+stages:
+  preprocess:
+    cmd: python3 src/data_prep.py
+    deps:
+    - path: data/Nvidia_stock.csv
+      hash: md5
+      md5: 636398e992b9efafffbc584fb07ae8e7
+      size: 651466
+      isexec: true
+    - path: src/data_prep.py
+      hash: md5
+      md5: e304ba08f11ee6cf0ff2c69da5f66e07
+      size: 471
+      isexec: true
+    outs:
+    - path: data/Nvidia_stock_processed.csv
+      hash: md5
+      md5: af74319e57b55fd862c50c65c6308020
+      size: 640585
+      isexec: true
