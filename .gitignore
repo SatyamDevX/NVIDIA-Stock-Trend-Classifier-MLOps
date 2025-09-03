@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+
+# Virtual environment
+.venv/
+
+# Jupyter notebooks
+.ipynb_checkpoints/
+
+# DVC
+*.dvc
+*.dvc.lock
+.cache/
+.dvc/tmp/
+.dvc/cache/
+
+# MLflow
+mlruns/
+
+# Models and data
+models/
+data/processed.csv
