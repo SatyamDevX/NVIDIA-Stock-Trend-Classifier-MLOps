@@ -11,13 +11,10 @@ __pycache__/
 # Jupyter notebooks
 .ipynb_checkpoints/
 
-# DVC
-*.dvc
-*.dvc.lock
-.cache/
-.dvc/tmp/
+# --- DVC ---
 .dvc/cache/
-!.dvc/
+.dvc/tmp/
+.cache/
 
 # MLflow
 mlruns/
