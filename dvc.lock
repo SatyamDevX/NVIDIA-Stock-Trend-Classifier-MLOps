@@ -38,3 +38,27 @@ stages:
       md5: d29297bbefbd4243e1b13bc3c1958982
       size: 39942108
       isexec: true
+  explain:
+    cmd: python3 src/explain.py
+    deps:
+    - path: data/Nvidia_stock_processed.csv
+      hash: md5
+      md5: fc093f7bce45930872ea07a0d0ad322f
+      size: 580431
+      isexec: true
+    - path: models/model.pkl
+      hash: md5
+      md5: d29297bbefbd4243e1b13bc3c1958982
+      size: 39942108
+      isexec: true
+    - path: src/explain.py
+      hash: md5
+      md5: d135cb0c1e34fc8889b2669ee26539f9
+      size: 670
+      isexec: true
+    outs:
+    - path: reports/shap_summary.png
+      hash: md5
+      md5: 68badbd17025ced5baf5058827ed644a
+      size: 89930
+      isexec: true

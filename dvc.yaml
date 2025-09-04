@@ -14,3 +14,12 @@ stages:
         - data/Nvidia_stock_processed.csv
       outs:
         - models/model.pkl
+        
+  explain:
+    cmd: python3 src/explain.py
+    deps:
+      - src/explain.py
+      - models/model.pkl
+      - data/Nvidia_stock_processed.csv
+    outs:
+      - reports/shap_summary.png      
