@@ -22,3 +22,6 @@ mlruns/
 # Models and data
 models/
 data/processed.csv
+
+#local remote dvc remote
+dvcstore/
