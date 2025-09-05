@@ -16,7 +16,7 @@ This project demonstrates a complete MLOps workflow:
 
 
 ## 📂Project Structure
-
+```bash
 ├── data/
 │   └── Nvidia_stock_processed.csv
 │   └── Nvidia_stock.csv
@@ -35,7 +35,7 @@ This project demonstrates a complete MLOps workflow:
 ├── dvc.yaml
 ├── README.md
 └── requirements.txt
-
+```
 
 ## ⚙️Setup Instructions
 
